@@ -1,4 +1,4 @@
-package com.bills.food_ordering.models;
+package com.bills.food_ordering.entities;
 
 import com.bills.food_ordering.constants.NumberConstant;
 import com.fasterxml.jackson.annotation.JsonIgnore;

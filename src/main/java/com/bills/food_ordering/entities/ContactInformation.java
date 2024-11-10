@@ -1,4 +1,4 @@
-package com.bills.food_ordering.models;
+package com.bills.food_ordering.entities;
 
 import lombok.Data;
 

@@ -1,15 +1,12 @@
-package com.bills.food_ordering.models;
+package com.bills.food_ordering.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 @Data
-public class IngredientCategory {
+public class IngredientsItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,11 +14,13 @@ public class IngredientCategory {
 
     private String name;
 
+    @ManyToOne
+    private IngredientCategory category;
+
     @JsonIgnore
     @ManyToOne
     private Restaurant restaurant;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<IngredientsItem> ingredients = new ArrayList<>();
+    private boolean isStoke = true;
 
 }
