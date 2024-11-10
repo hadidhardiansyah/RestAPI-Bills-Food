@@ -16,6 +16,8 @@ public abstract class UrlMapping {
 
     public static final String RESTAURANTS = "/api/restaurants";
 
+    public static final String RESTAURANT_ID = "restaurant/{restaurantId}";
+
     public static final String ID = "/{id}";
 
     public static final String STATUS = "/status";
@@ -25,5 +27,9 @@ public abstract class UrlMapping {
     public static final String SEARCH = "/search";
 
     public static final String ADD_FAVORITES = "/add-favorites";
+
+    public static final String ADMIN_FOOD = "/api/admin/food";
+
+    public static final String FOOD = "/api/food";
 
 }
