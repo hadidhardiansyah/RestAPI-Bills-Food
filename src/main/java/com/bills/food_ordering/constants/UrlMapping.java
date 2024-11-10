@@ -4,6 +4,8 @@ public abstract class UrlMapping {
 
     public static final String API = "/api";
 
+    public static final String API_ADMIN = "/api/admin";
+
     public static final String AUTH = "/auth";
 
     public static final String SIGN_UP = "/signup";
@@ -55,5 +57,13 @@ public abstract class UrlMapping {
     public static final String CART_ITEM_UPDATE = "/cart-item/update";
 
     public static final String CART_ITEM_REMOVE = "/cart-item/{id}/remove";
+
+    public static final String ORDER = "/order";
+
+    public static final String ORDER_USER = "/order/user";
+
+    public static final String ORDER_RESTAURANT = "/order/restaurant/{id}";
+
+    public static final String ORDER_STATUS = "/order/{Id}/{orderStatus}";
 
 }
