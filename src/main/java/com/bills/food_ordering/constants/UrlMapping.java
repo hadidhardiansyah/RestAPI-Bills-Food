@@ -46,4 +46,14 @@ public abstract class UrlMapping {
 
     public static final String STOKE = "/stoke";
 
+    public static final String CART = "/cart";
+
+    public static final String CART_ADD = "/cart/add";
+
+    public static final String CART_CLEAR = "/cart/clear";
+
+    public static final String CART_ITEM_UPDATE = "/cart-item/update";
+
+    public static final String CART_ITEM_REMOVE = "/cart-item/{id}/remove";
+
 }
