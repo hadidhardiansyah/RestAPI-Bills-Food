@@ -12,4 +12,18 @@ public abstract class UrlMapping {
 
     public static final String PROFILE = "/profile";
 
+    public static final String ADMIN_RESTAURANTS = "/api/admin/restaurants";
+
+    public static final String RESTAURANTS = "/api/restaurants";
+
+    public static final String ID = "/{id}";
+
+    public static final String STATUS = "/status";
+
+    public static final String USER = "/user";
+
+    public static final String SEARCH = "/search";
+
+    public static final String ADD_FAVORITES = "/add-favorites";
+
 }

@@ -40,7 +40,7 @@ public class JwtTokenValidator extends OncePerRequestFilter {
                 Claims claims = Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(jwt).getBody();
 
                 String email = String.valueOf(claims.get("email"));
-                String authorities = String.valueOf(claims.get("authirities"));
+                String authorities = String.valueOf(claims.get("authorities"));
 
                 // ROLE_CUSTOMER, ROLE_ADMIN
 

@@ -20,6 +20,8 @@ public class Restaurant {
     @OneToOne
     private User owner;
 
+    private String name;
+
     private String description;
 
     private String cuisineType;
