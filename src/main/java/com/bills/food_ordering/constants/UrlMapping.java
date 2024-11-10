@@ -18,6 +18,8 @@ public abstract class UrlMapping {
 
     public static final String RESTAURANTS = "/api/restaurants";
 
+    public static final String RESTAURANT = "/restaurant";
+
     public static final String RESTAURANT_ID = "restaurant/{restaurantId}";
 
     public static final String ID = "/{id}";
@@ -38,5 +40,10 @@ public abstract class UrlMapping {
 
     public static final String CATEGORY_RESTAURANT = "/category/restaurant";
 
+    public static final String CATEGORY = "/category";
+
+    public static final String INGREDIENTS = "api/admin/ingredients";
+
+    public static final String STOKE = "/stoke";
 
 }
