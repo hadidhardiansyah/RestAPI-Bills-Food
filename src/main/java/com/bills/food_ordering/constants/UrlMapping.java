@@ -2,6 +2,8 @@ package com.bills.food_ordering.constants;
 
 public abstract class UrlMapping {
 
+    public static final String API = "/api";
+
     public static final String AUTH = "/auth";
 
     public static final String SIGN_UP = "/signup";
@@ -31,5 +33,10 @@ public abstract class UrlMapping {
     public static final String ADMIN_FOOD = "/api/admin/food";
 
     public static final String FOOD = "/api/food";
+
+    public static final String ADMIN_CATEGORY = "/admin/category";
+
+    public static final String CATEGORY_RESTAURANT = "/category/restaurant";
+
 
 }
