@@ -9,6 +9,7 @@ import com.bills.food_ordering.services.interfaces.IFoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -31,6 +32,7 @@ public class FoodService implements IFoodService {
         food.setIngredients(createFoodRequest.getIngredients());
         food.setSeasonal(createFoodRequest.getIsSeasonal());
         food.setVegetarian(createFoodRequest.getIsVegetarian());
+        food.setCreationDate(new Date());
 
         Food savedFood = foodRepository.save(food);
         restaurant.getFoods().add(savedFood);
